@@ -1,34 +1,30 @@
 import React from 'react'
-import Nav from './component/Nav'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Course from './component/Course'
+import Home from './component/Home'
+import Contact from './component/Contact'
+import Work from './component/Work'
+import Login from "./component/Login"
+import About from './component/About'
+import Service from './component/Service'
+import Blog from './component/Blog'
 
-const App = () => {
-  
-  return (
-<>
-<Nav/>
-<section className="dark:bg-gray-800 dark:text-gray-100">
-	<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-			<h1 className="text-5xl font-bold leadi sm:text-6xl">The Delhi of 
-				
-			</h1>
-      <span className="text-5xl font-bold leadi sm:text-6xl dark:text-violet-400">best coding  Insititute</span>
-			<p className="mt-6 mb-8 text-2xl sm:mb-12">Learn coding, create compelling content for your website's success.
-				{/* <br className="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem */}
-			</p>
-			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Start learn</a>
-				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">more info</a>
-			</div>
-		</div>
-		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<img src="assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
-		</div>
-	</div>
-</section>
-
-</>
-  
-  )}
-
+function App() {
+	return (
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Home />}>Home</Route>
+					<Route path='/contact' element={<Contact />}>contact</Route>
+					<Route path='/course' element={<Course/>}>course</Route>
+					<Route path='/work-with-us' element={<Work/>}>work with us</Route>
+					<Route path='/login' element={<Login/>}></Route>
+					<Route path='/about' element={<About/>}></Route>
+					<Route path='/service' element={<Service/>}></Route>
+					<Route path='/blog' element={<Blog/>}></Route>
+				</Routes>
+			</BrowserRouter>
+		</>
+	)
+}
 export default App

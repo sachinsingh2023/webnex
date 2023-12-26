@@ -6,6 +6,7 @@ const Login = () => {
 	return (
 		<>
 		<Navba/>
+		<div className="gap h-12"></div>
 		<div className="gap h-20"></div>
 			<div className="login flex justify-center self-center">
 				<div className="w-full border justify-center  max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">

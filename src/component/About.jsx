@@ -5,7 +5,7 @@ import Footer from './Footer'
 const About = () => {
   return (
  <>
- <Navba/>
+ <Navba/><div className="gap h-12"></div>
  <Footer/>
  </>
   )

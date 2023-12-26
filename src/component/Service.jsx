@@ -1,8 +1,13 @@
 import React from 'react'
+import Navba from './Navba'
+import Footer from './Footer'
 
 const Service = () => {
   return (
-    <div>Service</div>
+<>
+<Navba/><div className="gap h-12"></div>
+<Footer/>
+</>
   )
 }
 

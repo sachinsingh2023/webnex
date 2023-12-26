@@ -5,7 +5,8 @@ import Footer from './Footer'
 const Work = () => {
   return (
 <>
-<Navba/>
+<Navba/><div className="gap h-12"></div>
+
 <Footer/></>
   )
 }

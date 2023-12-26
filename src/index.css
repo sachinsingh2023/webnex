@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kanit&family=Trade+Winds&display=swap');
 
 .kanit{
     font-family:"kanit",sans-serif;
+}
+/* for headding all page */
+.TradeWinds{
+    font-family: "Trade Winds";
 }

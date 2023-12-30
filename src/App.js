@@ -6,7 +6,6 @@ import Contact from './component/Contact'
 import Work from './component/Work'
 import Login from "./component/Login"
 import About from './component/About'
-import Service from './component/Service'
 import Blog from './component/Blog'
 
 function App() {
@@ -20,8 +19,8 @@ function App() {
 					<Route path='/work-with-us' element={<Work/>}>work with us</Route>
 					<Route path='/login' element={<Login/>}></Route>
 					<Route path='/about' element={<About/>}></Route>
-					<Route path='/service' element={<Service/>}></Route>
 					<Route path='/blog' element={<Blog/>}></Route>
+					<Route path='/sign up' element={<Login/>} ></Route>
 				</Routes>
 			</BrowserRouter>
 		</>

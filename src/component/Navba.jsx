@@ -35,7 +35,9 @@ const Navba = () => {
       <li>
       <Link to={"/course"}  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Course</Link>
       </li>
-      
+      <li>
+        <Link to={"/blog"} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Blog</Link>
+      </li>
       <li>
         <Link to={"/contact"} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</Link>
 
@@ -56,6 +58,9 @@ const Navba = () => {
       </li>
       <li>
       <Link to={"/course"}  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Course</Link>
+      </li>
+      <li>
+        <Link to={"/blog"} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Blog</Link>
       </li>
       
       <li>
